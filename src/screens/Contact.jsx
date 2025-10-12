@@ -95,25 +95,25 @@ const Contact = () => {
             {/* Email */}
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
               <Mail size={20} />
-              <span>kunalraj@example.com</span>
+              <span>pkeshav282@gmail.com</span>
             </div>
 
             {/* Phone */}
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
               <Phone size={20} />
-              <span>+91 9876543210</span>
+              <span>+91 8002393341</span>
             </div>
 
             {/* Address */}
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
               <MapPin size={20} />
-              <span>Mumbai, Maharashtra, India</span>
+              <span>Lucknow, Uttar Pradesh, India</span>
             </div>
 
             {/* Social Links */}
             <div className="flex gap-4 mt-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/keshavpandit94"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-orange-400 transition"
@@ -121,7 +121,7 @@ const Contact = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/keshav-chandra-pandit-8b0389243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition"
@@ -129,7 +129,7 @@ const Contact = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="https://instagram.com/yourusername"
+                href="https://www.instagram.com/_desi_balak_94?igsh=MWs1anU1cTAybjA2Zg=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400 transition"
@@ -137,7 +137,7 @@ const Contact = () => {
                 <Instagram size={24} />
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://x.com/panditkeshav94?t=WAz65L1jY62Fpu2B82Sgnw&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300 transition"

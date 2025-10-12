@@ -68,7 +68,7 @@ const About = () => {
         transition={{ delay: 0.3, duration: 1 }}
       >
         <h2 className="text-2xl md:text-3xl font-bold text-red-700 dark:text-orange-400 mb-4">
-          Hi, I'm Kunal Raj
+          Hi, I'm Keshav Chandra Pandit
         </h2>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
           I'm a passionate <strong>Full Stack Developer</strong> and BCA student. I specialize in building responsive web and mobile applications using

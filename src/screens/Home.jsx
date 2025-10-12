@@ -32,10 +32,10 @@ const Home = () => {
   ];
 
   const contacts = [
-    { icon: <Mail size={20} />, text: "kunal.raj@example.com", link: "mailto:kunal.raj@example.com" },
-    { icon: <Phone size={20} />, text: "+91 9876543210", link: "tel:+919876543210" },
-    { icon: <MapPin size={20} />, text: "Bihar, India" },
-    { icon: <Github size={20} />, text: "GitHub", link: "https://github.com/kunalraj" },
+    { icon: <Mail size={20} />, text: "pkeshav282@gmail.com", link: "mailto:pkeshav282@gmail.com" },
+    { icon: <Phone size={20} />, text: "+91 8002393341", link: "tel:+918002393341" },
+    { icon: <MapPin size={20} />, text: "Uttar Pradesh, India" },
+    { icon: <Github size={20} />, text: "GitHub", link: "https://github.com/keshavpandit94" },
   ];
 
   return (
@@ -47,9 +47,9 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl font-extrabold text-red-700 dark:text-orange-400"
+          className="text-3xl md:text-5xl font-extrabold text-red-700 dark:text-orange-400"
         >
-          Hi, I'm <span className="text-orange-600 dark:text-red-400">Kunal Raj</span>
+          Hi, I'm <span className="text-orange-600 dark:text-red-400">Keshav Chandra Pandit</span>
         </motion.h1>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

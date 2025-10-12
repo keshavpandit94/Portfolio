@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "Developed a command-line based café management system in Python that allows customers to place orders, view bills, and make payments. Implemented menu management, order processing, and basic payment simulation (cash/card).",
       tech: ["Python", "CLI", "Order Management"],
-      github: "#", // replace with GitHub link
+      github: "https://github.com/keshavpandit94/RestaurantCafeManagementWithPaymentMethod", // replace with GitHub link
       demo: "#",   // optional demo link if available
     },
     {
@@ -18,16 +18,16 @@ const Projects = () => {
       description:
         "Built a complete online learning system using React.js, Node.js, Express, and MongoDB. Integrated Cloudinary for video & image storage and Razorpay for secure payments. Developed an admin panel for course/content management. Deployed project with a working demo link and shared source code on GitHub & LinkedIn.",
       tech: ["React.js", "Node.js", "Express", "MongoDB", "Cloudinary", "Razorpay"],
-      github: "#", // replace with GitHub link
-      demo: "#",   // replace with demo link
+      github: "https://github.com/keshavpandit94/ELearningWithAdmin", // replace with GitHub link
+      demo: "https://elearningweb.onrender.com",   // replace with demo link
     },
     {
       name: "Portfolio Website",
       description:
         "Designed and developed my personal portfolio website using React.js and Tailwind CSS. Showcases my skills, projects, and contact information with a responsive layout and dark/light mode support.",
       tech: ["React.js", "JavaScript", "Tailwind CSS", "Framer Motion"],
-      github: "#", // replace with GitHub link
-      demo: "#",   // replace with live demo link
+      github: "https://github.com/keshavpandit94/Portfolio", // replace with GitHub link
+      demo: "https://portfolio-rhzb.onrender.com",   // replace with live demo link
     },
   ];
 
