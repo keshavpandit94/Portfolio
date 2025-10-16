@@ -132,7 +132,7 @@ const Home = () => {
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1.8, duration: 1 }}
         className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-center gap-10"
       >
-        <motion.img src="/developer.jpg" alt="Kunal Raj Developer"
+        <motion.img src={`https://avatars.githubusercontent.com/keshavpandit94`} alt="Keshav Pandit Developer"
           className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg object-cover border-4 border-orange-500 hover:scale-105 transition-transform duration-300"
         />
         <motion.div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg p-6 md:p-10 text-left max-w-xl border border-orange-300/40 flex flex-col gap-4">
