@@ -6,9 +6,9 @@ import Footer from "../components/Footer";
 const Projects = () => {
   const projects = [
     {
-      name: "Restaurant Café Management System",
+      name: "Restaurant Cafe Management System",
       description:
-        "Developed a command-line based café management system in Python that allows customers to place orders, view bills, and make payments. Implemented menu management, order processing, and basic payment simulation (cash/card).",
+        "Developed a command-line based cafe management system in Python that allows customers to place orders, view bills, and make payments. Implemented menu management, order processing, and basic payment simulation (cash/card).",
       tech: ["Python", "CLI", "Order Management"],
       github: "https://github.com/keshavpandit94/RestaurantCafeManagementWithPaymentMethod", // replace with GitHub link
       demo: "#",   // optional demo link if available
@@ -28,6 +28,14 @@ const Projects = () => {
       tech: ["React.js", "JavaScript", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/keshavpandit94/Portfolio", // replace with GitHub link
       demo: "https://portfolio-rhzb.onrender.com",   // replace with live demo link
+    },
+    {
+      name: "MedAI - AI Healthcare Assistant",
+      description:
+        "Developed an AI-powered healthcare web application using a Python Flask backend and React (Vite) frontend. The system features three intelligent agents: a Doctor Assistant chatbot for medical queries, a Report Analysis agent for interpreting medical reports, and a Prescription Reader agent for extracting and understanding prescription details. Designed to streamline patient interaction and assist in medical data interpretation.",
+      tech: ["React.js", "Vite", "JavaScript", "Python", "Flask", "AI Agents"],
+      github: "https://github.com/keshavpandit94/MedAIProject", // replace with your actual GitHub link
+      demo: "https://medai-0ssn.onrender.com", // replace with live demo link
     },
   ];
 
