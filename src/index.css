@@ -1,18 +1,94 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  
+  /* Modern Anti-Glare Typography Color Baseline */
+  color: #334155; 
+
+  /* Auto Multi-Color Shifting Canvas - Light Mode (Soft Amber, Pastel Rose, Alabaster) */
+  background: linear-gradient(135deg, #f8fafc, #fef3c7, #ffe4e6, #f8fafc);
+  background-size: 400% 400%;
+  animation: auroraCanvas 18s ease infinite;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Global micro-smoothing template for theme-swapping variables */
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+}
+
+/* Dark Mode Overrides - Auto Multi-Color Shifting Canvas (Deep Obsidian, Void Violet, Midnight Indigo) */
+.dark {
+  color: #f1f5f9; 
+  background: linear-gradient(135deg, #030712, #0f172a, #1e1b4b, #020617, #030712);
+  background-size: 400% 400%;
+  animation: auroraDarkCanvas 22s ease infinite;
+}
+
+/* Hardware-Accelerated Chroma Evolution Keyframes */
+@keyframes auroraCanvas {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes auroraDarkCanvas {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Respect System Accessibility Flags */
+@media (prefers-reduced-motion: reduce) {
+  :root, .dark {
+    animation: none !important;
+    background-size: 100% 100% !important;
+  }
 }
 
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Premium Custom Selection Overlays (Sleek Orange Highlight Track) */
+::selection {
+  background-color: rgba(234, 88, 12, 0.2); 
+  color: #ea580c;
+}
+
+.dark ::selection {
+  background-color: rgba(249, 115, 22, 0.3); 
+  color: #fdba74;
+}
+
+/* Global scrollbar tuning to maintain 3D UI sleekness */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 3px solid #f8fafc;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border: 3px solid #030712;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
