@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { Github, ExternalLink, Sparkles } from "lucide-react";
+import { projectsData } from "../data/projectsData"; // Imported central data file
 import Footer from "../components/Footer";
 
 // High-End Adaptive Chromatic Multi-Color Auto-Breathing 3D Card Shell Component
@@ -119,45 +120,6 @@ const Interactive3DCard = ({ children, className, spotlightColor = "from-orange-
 };
 
 const Projects = () => {
-  const projects = [
-    {
-      name: "Restaurant Cafe Management System",
-      description:
-        "Developed a command-line based cafe management system in Python that allows customers to place orders, view bills, and make payments. Implemented menu management, order processing, and basic payment simulation (cash/card).",
-      tech: ["Python", "CLI", "Order Management"],
-      github: "https://github.com/keshavpandit94/RestaurantCafeManagementWithPaymentMethod",
-      demo: "",
-      glow: "from-amber-500/25 via-orange-600/15"
-    },
-    {
-      name: "Full Stack E-Learning Platform",
-      description:
-        "Built a complete online learning system using React.js, Node.js, Express, and MongoDB. Integrated Cloudinary for video & image storage and Razorpay for secure payments. Developed an admin panel for course/content management. Deployed project with a working demo link and shared source code on GitHub & LinkedIn.",
-      tech: ["React.js", "Node.js", "Express", "MongoDB", "Cloudinary", "Razorpay"],
-      github: "https://github.com/keshavpandit94/ELearningWithAdmin",
-      demo: "https://elearningweb.onrender.com",
-      glow: "from-indigo-500/25 via-blue-600/15"
-    },
-    {
-      name: "Portfolio Website",
-      description:
-        "Designed and developed my personal portfolio website using React.js and Tailwind CSS. Showcases my skills, projects, and contact information with a responsive layout and dark/light mode support.",
-      tech: ["React.js", "JavaScript", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/keshavpandit94/Portfolio",
-      demo: "https://portfolio-rhzb.onrender.com",
-      glow: "from-orange-500/25 via-red-600/15"
-    },
-    {
-      name: "MedAI - AI Healthcare Assistant",
-      description:
-        "Developed an AI-powered healthcare web application using a Python Flask backend and React (Vite) frontend. The system features three intelligent agents: a Doctor Assistant chatbot for medical queries, a Report Analysis agent for interpreting medical reports, and a Prescription Reader agent for extracting and understanding prescription details. Designed to streamline patient interaction and assist in medical data interpretation.",
-      tech: ["React.js", "Vite", "JavaScript", "Python", "Flask", "AI Agents"],
-      github: "https://github.com/keshavpandit94/MedAIProject",
-      demo: "https://medai-0ssn.onrender.com",
-      glow: "from-cyan-500/25 via-emerald-500/15"
-    },
-  ];
-
   const scrollFadeVariants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 16 } }
@@ -233,7 +195,7 @@ const Projects = () => {
           </h1>
         </motion.div>
 
-        {/* Project Cards Grid - Updated with Flat Typography Readability Settings */}
+        {/* Project Cards Grid - Dynamically Iterated from Central projectsData */}
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -241,11 +203,11 @@ const Projects = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl px-4 sm:px-8 z-10"
         >
-          {projects.map((project, index) => (
+          {projectsData.map((project, index) => (
             <Interactive3DCard 
               key={index} 
               spotlightColor={project.glow}
-              animDelay={index * 0.5}
+              animDelay={index * 0.25}
               className="p-6 md:p-8 flex flex-col justify-between gap-8"
             >
               <div>
@@ -301,7 +263,7 @@ const Projects = () => {
         </motion.div>
       </div>
 
-      {/* Footer Area Injection with dynamic docking alignment */}
+      {/* Footer Area Injection */}
       <Footer />
     </div>
   );
